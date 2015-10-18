@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11486350}
   - 114: {fileID: 11418036}
   - 114: {fileID: 11432394}
+  - 114: {fileID: 11418276}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -271,6 +272,19 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &11418276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc78358d0642564c92d2af47d51b16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MyTransform: {fileID: 476968}
+  m_LerpRate: 15
 --- !u!114 &11432394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -431,7 +445,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_MyTransform
+      value: 
+      objectReference: {fileID: 476968}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139944}
